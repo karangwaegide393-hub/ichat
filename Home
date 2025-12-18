@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iChat</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4f46e5;
+    }
+
+    .nav-btn {
+      display: block;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-btn:hover {
+      background: #4338ca;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to iChat</h1>
+    <p>Your social media hub!</p>
+
+    <button class="nav-btn" onclick="goToFeed()">Home Feed</button>
+    <button class="nav-btn" onclick="goToMessages()">Messages</button>
+    <button class="nav-btn" onclick="goToReels()">Reels</button>
+    <button class="nav-btn" onclick="goToNotifications()">Notifications</button>
+  </div>
+
+  <script>
+    function goToFeed() {
+      window.location.href = "home.html";
+    }
+
+    function goToMessages() {
+      window.location.href = "messages.html";
+    }
+
+    function goToReels() {
+      window.location.href = "reels.html";
+    }
+
+    function goToNotifications() {
+      window.location.href = "notifications.html";
+    }
+  </script>
+
+</body>
+</html>
